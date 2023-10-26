@@ -60,9 +60,13 @@ function Friend({ friend }) {
         </p>
       )}
 
-      <button className="button">Select</button>
+      <Button>Select</Button>
     </li>
   );
+}
+
+function Button({ children }) {
+  return <button className="button">{children}</button>;
 }
 
 function FormAddFriend() {
@@ -74,7 +78,7 @@ function FormAddFriend() {
       <label htmlFor="image-url">🖼 Image URL</label>
       <input type="text" id="image-url" />
 
-      <button className="button">Add Friend</button>
+      <Button>Add Friend</Button>
     </form>
   );
 }
