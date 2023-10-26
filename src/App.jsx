@@ -64,3 +64,17 @@ function Friend({ friend }) {
     </li>
   );
 }
+
+function FormAddFriend() {
+  return (
+    <form className="form-add-friend">
+      <label htmlFor="friend-name">👩🏻‍🤝‍🧑🏽 Friend's name</label>
+      <input type="text" id="friend-name" />
+
+      <label htmlFor="image-url">🖼 Image URL</label>
+      <input type="text" id="image-url" />
+
+      <button className="button">Add Friend</button>
+    </form>
+  );
+}
